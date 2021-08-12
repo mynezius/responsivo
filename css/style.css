@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #818181;
+}
+.container{
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw 15vw 15vw 15vw; 
+    justify-content: center;
+    align-content: start;
+    grid-gap: 1vw;
+}
+.container-flex{
+    display: flex;
+}
+
+h1{
+    grid-column: span 6;
+    padding-top: 15vh;
+    margin-left: 2vw;
+}
+#logo{
+    grid-column: 3/5;
+}
+#logo img{
+    width: 30vw;
+}
+nav{
+    width: 100vw;
+    grid-column: span 6;
+    
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+    padding: 0 1.5vw 0 1.5vw;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+}
+header{
+    width: 100vw;
+    height: 15vh;
+    border: 1px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f8f6f6;
+}
+section{
+    width: 100vw;
+    min-height: 60vh;
+    
+}
+section div{
+    grid-column: span 6;
+    margin-top: 6vh;
+    
+}
+#sobre div{
+    padding: 0 4vw 0 4vw;
+}
+#sobre div div{
+    float: left;
+    width: 50%;
+    align-self: flex-end
+    
+}
+#sobre div div img{
+    width: 100%;
+    border: black 1px solid;
+}
+#sobre{
+    letter-spacing: 1px;
+    line-height: 20px; 
+}
+#sobre div p{
+    text-indent: 20px;
+    text-align: justify;
+    line-height: 2;
+}
+
+#cursos div img {
+    width:100%;
+}
+
+#cursos div h2{
+    background-color:#ddd;
+    text-align: Center;
+    padding:2vh 0 2vh 0;
+}
+#curso-wd{
+    
+    border-top:2vh solid#00f;
+}
+
+#curso-prog{
+    
+    border-top:2vh solid#00f;
+
+}
+#curso-cd{
+     
+    border-top:2vh solid#00f;
+}
+
+#planos div{
+    width: 100%;
+    padding: 1.5vh 0 1.5vh 0;
+    
+
+}
+#planos div h2{
+    background-color: #eee8e8;
+    text-align: center;
+    width: 95%;
+    margin-left: 2.5%;
+    border: 1px solid black
+}
+#planos div strong{
+    font-size: 22px;
+    margin-left: 2.5% ;
+}
+#planos div p{
+    margin-left:1vw;
+    font-size: 22px;
+    line-height: 2;
+    font-weight: bold;
+}
+#planos #info{
+    background-color: #fff;
+    width: 95%;
+    margin-left: 2.5%;
+}
+#planos div a{
+    margin-left: 29vw;
+    padding: 0 2vw 0 2vw;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+#planos-basico{
+    background-color: #613b18;
+}
+#planos-completo{
+    background-color: #25721e;
+}
+#planos-vip{
+    background-color: #f1f115;
+}
+#valores{
+    width: 100%;
+    padding-left: 3vw;
+}
+#valores div {
+    width: 90vw;
+}
+#valores div h2{
+    padding-left: 0.5vw;
+}
+#valores div p{
+    text-align: justify;
+    margin-top: 1.5vh;
+    margin-left: 1.5vw;
+    font-size: 3vh;
+    
+}
+
+
+@media only screen and (min-width: 980px){
+    #logo{
+        grid-column: 1/2;
+    }
+    #logo img{
+        width: 10vw;
+    }
+    nav{
+        grid-column: 5/6;
+        margin-top: 5vh;
+    }
+    section div{
+        grid-column: span 2;
+    }
+    #sobre div{
+        grid-column: span 3;
+    }
+
+    #cursos{
+        display:flex;
+    }
+    #cursos div{
+        align-self: flex-end;
+        width: 30%;
+    }
+    #planos{
+        display: flex;
+    }
+    #planos div{
+        align-self: flex-end;
+        width: 30%;
+    }
+    #planos div a{
+        margin-left: 8vw;
+    }
+    #valores div{
+        width: 53vh;
+    }
+    
+    
+
+    
+}
